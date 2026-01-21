@@ -3,1059 +3,613 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebAtCost Web Solutions | Web Design & Development Services by Sudarshan Dalavi</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <title>WebAtCost Web Solutions| Affordable Professional Digital Marketing Agency</title>
+    <meta name="description" content="Get a premium, mobile-responsive website starting at just ₹2999. WebAtCost Web Solutions provides affordable web development, SEO, and e-commerce solutions for small businesses.">
+    <meta name="keywords" content="affordable web design, cheap website builder, professional web development, SEO services, small business website, digital marketing, shrigonda">
+    <meta name="author" content="Sudarshan Dalavi">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.webatcost.in">
+
+    <meta property="og:title" content="WebAtCost Web Solutions- Premium Websites, Budget Prices">
+    <meta property="og:description" content="Launch your business online with a professional website starting at $299. Fast delivery and 24/7 support.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.webatcost.in">
+    <meta property="og:image" content="https://www.webatcost.in/banner-image.jpg"> <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="WebAtCost Web Solutions | Affordable Web Design">
+    <meta name="twitter:description" content="Professional websites without the premium price tag. Get started today.">
+    <meta name="twitter:image" content="https://www.webatcost.in/banner-image.jpg">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "WebAtCost Web Solutions",
+      "image": "https://www.webatcost.in/logo.png",
+      "description": "Affordable web design and development agency specialized in small businesses.",
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "IN" 
+      },
+      "telephone": "+917499404630",
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+    </script>
+
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             font-family: 'Poppins', sans-serif;
+            background: #f8f9fa;
+            color: #0a0a0a;
+            overflow-x: hidden;
             scroll-behavior: smooth;
         }
-        
-        .gradient-text {
-            background: linear-gradient(90deg, #3b82f6, #10b981, #ef4444);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+
+        /* --- UPDATED NAVIGATION --- */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            padding: 20px 60px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #e0e0e0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .logo {
+            font-size: 26px;
+            font-weight: 800;
+            color: #0a0a0a;
+            letter-spacing: -1px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: #4b5563;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            transition: all 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #6366f1;
+        }
+
+        /* Navbar CTA Button Style */
+        .nav-cta {
+            background: #6366f1;
+            color: #fff !important;
+            padding: 10px 24px;
+            border-radius: 50px;
+            font-weight: 600 !important;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+            background: #4f46e5;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 140px 60px 80px; /* Increased top padding for fixed nav */
+            position: relative;
+        }
+
+        .hero-content {
+            text-align: center;
+            max-width: 900px;
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(40px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .hero-badge {
+            display: inline-block;
+            padding: 12px 24px;
+            background: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 600;
+            color: #4b5563;
+            margin-bottom: 32px;
+            animation: fadeInUp 0.8s ease-out 0.2s both;
+        }
+
+        .hero h1 {
+            font-size: 72px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.1;
+            color: #0a0a0a;
+            letter-spacing: -2px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #6b7280;
+            margin-bottom: 48px;
+            font-weight: 400;
+            line-height: 1.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .btn {
+            padding: 18px 48px;
+            border: none;
+            border-radius: 16px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #0a0a0a;
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-secondary {
+            background: #fff;
+            color: #0a0a0a;
+            border: 2px solid #e0e0e0;
+        }
+
+        .btn-secondary:hover {
+            border-color: #0a0a0a;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .trust-indicators {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+            margin-top: 64px;
+            animation: fadeInUp 0.8s ease-out 0.4s both;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 15px;
+            font-weight: 600;
+            color: #374151;
+        }
+
+        .trust-icon { font-size: 24px; }
+
+        /* Stats Section */
+        .stats {
+            padding: 80px 60px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .stat-block {
+            text-align: center;
+            padding: 48px 32px;
+            background: #fff;
+            border-radius: 24px;
+            border: 1px solid #e5e7eb;
+            transition: all 0.4s;
+            cursor: default;
         }
         
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
-        }
+        .stat-block:hover { transform: translateY(-5px); border-color: #6366f1; }
+        .stat-number { font-size: 56px; font-weight: 800; color: #6366f1; margin-bottom: 12px; }
+        .stat-label { font-size: 15px; color: #6b7280; font-weight: 500; }
+
+        /* Common Section Styles */
+        section { scroll-margin-top: 100px; } /* Ensures nav doesn't cover title on click */
+        .section-title { text-align: center; font-size: 56px; font-weight: 800; margin-bottom: 24px; color: #0a0a0a; letter-spacing: -2px; }
+        .section-subtitle { text-align: center; font-size: 18px; color: #6b7280; margin-bottom: 64px; max-width: 700px; margin: 0 auto 64px; }
+
+        /* About Section (New) */
+        .about { padding: 100px 60px; max-width: 1200px; margin: 0 auto; }
+        .about-content { background: #fff; padding: 60px; border-radius: 30px; border: 1px solid #e5e7eb; text-align: center; }
+        .about p { font-size: 18px; line-height: 1.8; color: #4b5563; margin-bottom: 20px; }
+
+        /* Services Section */
+        .services { padding: 100px 60px; max-width: 1400px; margin: 0 auto; }
+        .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
         
-        .project-showcase:hover .project-overlay {
-            opacity: 1;
+        .service-card {
+            background: #fff; padding: 48px 40px; border-radius: 24px; border: 2px solid #e0e0e0;
+            transition: all 0.4s; cursor: pointer; opacity: 0; transform: translateY(40px) scale(0.95);
         }
-        
-        .project-overlay {
-            background: rgba(59, 130, 246, 0.9);
-            transition: opacity 0.3s ease;
+        .service-card:hover { transform: translateY(-16px) scale(1.02); border-color: #6366f1; box-shadow: 0 24px 60px rgba(0,0,0,0.1); }
+        .service-icon { width: 72px; height: 72px; background: #f3f4f6; border-radius: 18px; display: flex; align-items: center; justify-content: center; font-size: 32px; margin-bottom: 28px; }
+        .service-card h3 { font-size: 26px; margin-bottom: 16px; font-weight: 700; }
+        .service-card p { color: #6b7280; margin-bottom: 24px; line-height: 1.6; }
+        .service-features { list-style: none; margin-bottom: 28px; }
+        .service-features li { padding: 10px 0; color: #374151; font-size: 14px; }
+        .service-features li::before { content: '✓'; margin-right: 12px; color: #6366f1; font-weight: 700; }
+
+        /* Portfolio Section (New) */
+        .portfolio { padding: 100px 60px; background: #fff; }
+        .portfolio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; max-width: 1400px; margin: 0 auto; }
+        .portfolio-item { height: 300px; background: #f3f4f6; border-radius: 24px; display: flex; align-items: center; justify-content: center; font-weight: 700; color: #9ca3af; border: 1px dashed #d1d5db; }
+
+        /* Why Choose Us */
+        .why-choose { padding: 100px 60px; max-width: 1400px; margin: 0 auto; background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%); }
+        .why-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px; }
+        .why-card { background: #fff; padding: 48px 40px; border-radius: 24px; border: 2px solid #e0e0e0; transition: all 0.4s; position: relative; overflow: hidden; opacity: 0; transform: translateY(40px); }
+        .why-card:hover { transform: translateY(-10px); border-color: #6366f1; }
+        .why-number { font-size: 72px; font-weight: 900; color: #f3f4f6; position: absolute; top: 20px; right: 30px; }
+        .why-card h3 { font-size: 26px; margin-bottom: 16px; position: relative; z-index: 1; }
+        .why-card p { color: #6b7280; line-height: 1.7; position: relative; z-index: 1; }
+
+        /* Testimonials */
+        .testimonials { padding: 100px 60px; max-width: 1400px; margin: 0 auto; }
+        .testimonials-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .testimonial-card { background: #fff; padding: 40px; border-radius: 24px; border: 2px solid #e0e0e0; transition: all 0.4s; opacity: 0; transform: translateY(40px); }
+        .testimonial-card:hover { transform: translateY(-10px); border-color: #6366f1; }
+        .testimonial-author { display: flex; align-items: center; gap: 16px; margin-top: 20px; }
+        .author-avatar { width: 50px; height: 50px; background: #6366f1; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; }
+
+        /* Pricing */
+        .pricing { padding: 100px 60px; max-width: 1400px; margin: 0 auto; background: #fff; border-radius: 40px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px; }
+        .price-card { background: #f8f9fa; padding: 48px 40px; border-radius: 24px; border: 2px solid #e0e0e0; transition: all 0.4s; cursor: pointer; opacity: 0; transform: translateY(40px); }
+        .price-card:hover { transform: translateY(-16px); }
+        .price-card.featured { background: #0a0a0a; border-color: #0a0a0a; transform: scale(1.05); }
+        .price-card.featured h3, .price-card.featured .price, .price-card.featured .features-list li { color: #fff; }
+        .price-card.featured .price-subtitle, .price-card.featured .price-period { color: #9ca3af; }
+        .price { font-size: 64px; font-weight: 800; color: #6366f1; margin-bottom: 8px; letter-spacing: -2px; }
+        .features-list li { padding: 14px 0; color: #374151; border-bottom: 1px solid #e5e7eb; }
+
+        /* Contact */
+        .contact { padding: 100px 60px; max-width: 900px; margin: 0 auto; }
+        .contact-form { background: #fff; padding: 64px; border-radius: 32px; border: 2px solid #e0e0e0; opacity: 0; transform: translateY(40px); }
+        .form-group { margin-bottom: 28px; }
+        .form-group label { display: block; margin-bottom: 12px; font-weight: 600; color: #374151; }
+        .form-group input, .form-group select, .form-group textarea { width: 100%; padding: 18px 20px; background: #f8f9fa; border: 2px solid #e0e0e0; border-radius: 16px; font-family: 'Poppins'; }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #6366f1; background: #fff; }
+
+        /* Footer */
+        footer { padding: 100px 60px 40px; border-top: 1px solid #e5e7eb; background: #fff; margin-top: 60px; }
+        .footer-content { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 60px; max-width: 1400px; margin: 0 auto 60px; }
+        .footer-brand h3 { font-size: 24px; font-weight: 800; margin-bottom: 16px; }
+        .footer-links ul { list-style: none; }
+        .footer-links li { margin-bottom: 12px; }
+        .footer-links a { text-decoration: none; color: #6b7280; transition: color 0.3s; }
+        .footer-links a:hover { color: #6366f1; }
+        .footer-bottom { text-align: center; color: #9ca3af; padding-top: 40px; border-top: 1px solid #f3f4f6; }
+
+        /* Mobile Responsive */
+        @media (max-width: 1024px) {
+            .nav-links { display: none; } /* Simplified for this code block - normally would add a hamburger menu script */
+            .hero h1 { font-size: 48px; }
+            .stats, .services-grid, .why-grid, .testimonials-grid, .pricing-grid, .portfolio-grid, .footer-content { grid-template-columns: 1fr; }
+            .price-card.featured { transform: scale(1); }
         }
-        
-        .pricing-card:hover {
-            transform: scale(1.03);
-            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
-        }
+
+        /* Animations Class */
+        .pop-up { animation: popUp 0.6s cubic-bezier(0.34, 1.56, 0.64, 1) forwards; }
+        @keyframes popUp { to { opacity: 1; transform: translateY(0) scale(1); } }
+        @keyframes popUpFeatured { to { opacity: 1; transform: translateY(0) scale(1.05); } }
+
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-    <!-- Navigation -->
-    <nav class="fixed w-full bg-white shadow-sm z-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <a href="#" class="text-xl font-bold gradient-text">WebAtCost</a>
-                </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="#services" class="text-gray-700 hover:text-blue-600 transition">Services</a>
-                    <a href="#portfolio" class="text-gray-700 hover:text-blue-600 transition">Portfolio</a>
-                    <a href="#pricing" class="text-gray-700 hover:text-blue-600 transition">Pricing</a>
-                    <a href="#process" class="text-gray-700 hover:text-blue-600 transition">Process</a>
-                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Get a Quote</a>
-                </div>
-                <div class="md:hidden flex items-center">
-                    <button id="menu-btn" class="text-gray-700">
-                        <i class="fas fa-bars text-xl"></i>
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white py-2 px-4 shadow-lg">
-            <a href="#services" class="block py-2 text-gray-700 hover:text-blue-600 transition">Services</a>
-            <a href="#portfolio" class="block py-2 text-gray-700 hover:text-blue-600 transition">Portfolio</a>
-            <a href="#pricing" class="block py-2 text-gray-700 hover:text-blue-600 transition">Pricing</a>
-            <a href="#process" class="block py-2 text-gray-700 hover:text-blue-600 transition">Process</a>
-            <a href="#contact" class="block py-2 bg-blue-600 text-white rounded-lg text-center mt-2">Get a Quote</a>
-        </div>
+<body>
+
+    <nav>
+        <div class="logo">WebAtCost Web Solutions</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#contact" class="nav-cta">Get Started</a></li>
+        </ul>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-12 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">
-                    Professional Websites <br>
-                    <span class="gradient-text">Without The Premium Price</span>
-                </h1>
-                <p class="text-xl mb-8 text-gray-600">
-                    WebAtCost delivers high-quality, affordable web solutions for businesses and individuals worldwide. Founded by Sudarshan Dalavi to make professional web development accessible.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#contact" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition shadow-md">
-                        Get Started Today!
-                    </a>
-                    <a href="#portfolio" class="border-2 border-blue-600 text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-lg font-medium transition">
-                        View Our Work
-                    </a>
-                </div>
-                <div class="mt-8 flex items-center space-x-4">
-                    <div class="flex -space-x-2">
-                        <img src="https://randomuser.me/api/portraits/women/12.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Client">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Client">
-                        <img src="https://randomuser.me/api/portraits/women/45.jpg" class="w-10 h-10 rounded-full border-2 border-white" alt="Client">
-                    </div>
-                    <div>
-                        <p class="text-sm font-medium">Trusted by 50+ clients worldwide</p>
-                        <div class="flex items-center">
-                            <i class="fas fa-star text-yellow-400 mr-1"></i>
-                            <span class="text-sm">4.9/5 (28 reviews)</span>
-                        </div>
-                    </div>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">🚀 Trusted by 50+ businesses worldwide</div>
+            <h1>Professional Websites Without The Premium Price</h1>
+            <p>High-quality, affordable web solutions for businesses and individuals worldwide. We combine cutting-edge design with budget-friendly pricing.</p>
+            <div class="cta-buttons">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+                <a href="#portfolio" class="btn btn-secondary">View Work</a>
             </div>
-            <div class="md:w-1/2">
-                <div class="relative">
-                    <div class="absolute -right-8 -top-8 w-64 h-64 bg-blue-100 rounded-2xl opacity-50"></div>
-                    <div class="absolute -left-8 -bottom-8 w-64 h-64 bg-green-100 rounded-2xl opacity-50"></div>
-                    <div class="relative bg-white p-2 rounded-xl shadow-xl border border-gray-200">
-                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Web Design" class="rounded-lg w-full">
-                        <div class="absolute -bottom-4 -right-4 bg-white p-4 rounded-lg shadow-lg border border-gray-200">
-                            <div class="flex items-center">
-                                <div class="bg-blue-100 p-3 rounded-full mr-3">
-                                    <i class="fas fa-check text-blue-600"></i>
-                                </div>
-                                <div>
-                                    <p class="font-bold">Project Completed</p>
-                                    <p class="text-sm text-gray-600">E-commerce Website</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="trust-indicators">
+                <div class="trust-item"><span class="trust-icon">⚡</span><span>Fast Delivery</span></div>
+                <div class="trust-item"><span class="trust-icon">🔒</span><span>Secure & Reliable</span></div>
+                <div class="trust-item"><span class="trust-icon">💬</span><span>24/7 Support</span></div>
             </div>
         </div>
     </section>
 
-    <!-- Clients Section -->
-    <section class="py-12 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <p class="text-center text-gray-500 mb-8">TRUSTED BY BUSINESSES WORLDWIDE</p>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
-                <img src="https://via.placeholder.com/150x60?text=Client+Logo" alt="Client Logo" class="h-12 object-contain opacity-70 hover:opacity-100 transition">
+    <section class="stats">
+        <div class="stat-block"><div class="stat-number">50+</div><div class="stat-label">Happy Clients</div></div>
+        <div class="stat-block"><div class="stat-number">75+</div><div class="stat-label">Projects Done</div></div>
+        <div class="stat-block"><div class="stat-number">5+</div><div class="stat-label">Countries</div></div>
+        <div class="stat-block"><div class="stat-number">100%</div><div class="stat-label">Satisfaction</div></div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 class="section-title">About WebAtCost Web Solutions</h2>
+        <div class="about-content">
+            <p>Founded on the belief that professional web presence shouldn't cost a fortune, WebAtCost Web Solutions is dedicated to helping small businesses and startups compete in the digital age.</p>
+            <p>We strip away the agency bloat and focus on what matters: clean code, beautiful design, and results that drive growth.</p>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title">Our Services</h2>
+        <p class="section-subtitle">Comprehensive web solutions tailored to your needs. From design to deployment, we handle everything.</p>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">🎨</div>
+                <h3>Custom Development</h3>
+                <p>Tailored websites built to match your brand identity.</p>
+                <ul class="service-features"><li>Responsive design</li><li>SEO optimized</li><li>Fast loading</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🛒</div>
+                <h3>E-commerce</h3>
+                <p>Powerful online stores with secure payment gateways.</p>
+                <ul class="service-features"><li>WooCommerce</li><li>Payments</li><li>Mobile checkout</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📝</div>
+                <h3>WordPress</h3>
+                <p>Easy-to-manage sites with custom themes and control.</p>
+                <ul class="service-features"><li>Custom themes</li><li>Plugins</li><li>Training included</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">📈</div>
+                <h3>SEO & Growth</h3>
+                <p>Improve search rankings and drive organic traffic.</p>
+                <ul class="service-features"><li>Keyword research</li><li>On-page SEO</li><li>Technical audit</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">✍️</div>
+                <h3>Content</h3>
+                <p>Professional writing to keep your site fresh.</p>
+                <ul class="service-features"><li>Blog writing</li><li>Product text</li><li>Content strategy</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🔧</div>
+                <h3>Maintenance</h3>
+                <p>Ongoing support packages to keep you secure.</p>
+                <ul class="service-features"><li>Updates</li><li>Monitoring</li><li>Daily Backups</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Quote</a>
             </div>
         </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold gradient-text">Our Web Solutions</h2>
-            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-            <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                Comprehensive web services designed to meet your business needs without breaking the bank
-            </p>
+    <section class="portfolio" id="portfolio">
+        <h2 class="section-title">Recent Work</h2>
+        <p class="section-subtitle">Check out some of our recent projects.</p>
+        <div class="portfolio-grid">
+            <div class="portfolio-item">Project 1 Image</div>
+            <div class="portfolio-item">Project 2 Image</div>
+            <div class="portfolio-item">Project 3 Image</div>
         </div>
+    </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <!-- Service 1 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-laptop-code text-blue-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Custom Website Development</h3>
-                <p class="text-gray-600 mb-4">
-                    Tailored websites built from scratch to match your brand identity and business objectives perfectly.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Fully responsive design</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>SEO optimized</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Fast loading speeds</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-blue-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+    <section class="why-choose">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="why-grid">
+            <div class="why-card">
+                <div class="why-number">01</div>
+                <h3>Budget-Friendly</h3>
+                <p>Premium quality doesn't have to break the bank. We deliver professional websites at prices that make sense.</p>
             </div>
-
-            <!-- Service 2 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-shopping-cart text-green-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">E-commerce Solutions</h3>
-                <p class="text-gray-600 mb-4">
-                    Powerful online stores with secure payment gateways, inventory management, and marketing tools.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>WooCommerce/Shopify</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Payment integration</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Mobile-friendly checkout</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-green-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+            <div class="why-card">
+                <div class="why-number">02</div>
+                <h3>Fast Turnaround</h3>
+                <p>We work efficiently to deliver your project on time. Most basic websites are done in 7-10 days.</p>
             </div>
-
-            <!-- Service 3 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fab fa-wordpress text-purple-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">WordPress Websites</h3>
-                <p class="text-gray-600 mb-4">
-                    Easy-to-manage WordPress sites with custom themes and plugins for complete control over your content.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Custom theme development</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Plugin customization</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>User training included</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-purple-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+            <div class="why-card">
+                <div class="why-number">03</div>
+                <h3>Dedicated Support</h3>
+                <p>We provide ongoing support and maintenance. Our team is always just a message away.</p>
             </div>
-
-            <!-- Service 4 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-search-dollar text-red-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">SEO Optimization</h3>
-                <p class="text-gray-600 mb-4">
-                    Improve your search rankings and drive organic traffic with our comprehensive SEO services.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Keyword research</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>On-page optimization</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Technical SEO audit</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-red-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Service 5 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-pencil-alt text-yellow-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Content Management</h3>
-                <p class="text-gray-600 mb-4">
-                    Professional content creation and management services to keep your website fresh and engaging.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Blog writing</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Product descriptions</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>SEO content strategy</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-yellow-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
-            </div>
-
-            <!-- Service 6 -->
-            <div class="service-card bg-white rounded-xl overflow-hidden shadow-md transition duration-300 p-8">
-                <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-wrench text-indigo-600 text-2xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-4">Website Maintenance</h3>
-                <p class="text-gray-600 mb-4">
-                    Ongoing support and maintenance packages to keep your website secure and up-to-date.
-                </p>
-                <ul class="space-y-2 mb-6">
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Regular updates</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Security monitoring</span>
-                    </li>
-                    <li class="flex items-center">
-                        <i class="fas fa-check text-green-500 mr-2"></i>
-                        <span>Backup services</span>
-                    </li>
-                </ul>
-                <a href="#contact" class="text-indigo-600 font-medium hover:underline inline-flex items-center">
-                    Get a quote <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+            <div class="why-card">
+                <div class="why-number">04</div>
+                <h3>Modern Tech</h3>
+                <p>Every website we build is developed using modern standards and is fully responsive on all devices.</p>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold gradient-text">Our Recent Work</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                    Explore our portfolio of successful web projects across various industries
-                </p>
+    <section class="testimonials" id="testimonials">
+        <h2 class="section-title">Client Reviews</h2>
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"I was skeptical about the price, but the quality blew me away. Professional and fast."</p>
+                <div class="testimonial-author"><div class="author-avatar">S</div><div><strong>Sarah Jenkins</strong><br><small>Sweet Delights</small></div></div>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <!-- Project 1 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="E-commerce Website" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Fashion Boutique</h3>
-                        <p class="text-center mb-4">E-commerce website with custom product filters and checkout</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1499951360447-b19be8fe80f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Corporate Website" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Tech Startup</h3>
-                        <p class="text-center mb-4">Corporate website with interactive elements and blog</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Restaurant Website" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Gourmet Restaurant</h3>
-                        <p class="text-center mb-4">Online reservation system and menu display</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Educational Platform" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Online Learning</h3>
-                        <p class="text-center mb-4">Course management system with student dashboard</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Blog Website" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Travel Blog</h3>
-                        <p class="text-center mb-4">Custom WordPress theme with interactive maps</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-showcase rounded-xl overflow-hidden relative">
-                    <img src="https://images.unsplash.com/photo-1521791055366-0d553872125f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="Portfolio Website" class="w-full h-64 object-cover">
-                    <div class="project-overlay absolute inset-0 flex flex-col justify-center items-center text-white p-6 opacity-0">
-                        <h3 class="text-xl font-bold mb-2">Artist Portfolio</h3>
-                        <p class="text-center mb-4">Minimalist design showcasing artwork gallery</p>
-                        <a href="#" class="border-2 border-white px-4 py-2 rounded-lg hover:bg-white hover:text-blue-600 transition">View Details</a>
-                    </div>
-                </div>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"WebAtCost helped us launch our startup in record time. Excellent communication."</p>
+                <div class="testimonial-author"><div class="author-avatar">M</div><div><strong>Michael Ross</strong><br><small>TechFlow</small></div></div>
             </div>
-
-            <div class="text-center mt-12">
-                <a href="#" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-blue-600 hover:bg-blue-700 transition">
-                    View Full Portfolio
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </a>
+            <div class="testimonial-card">
+                <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                <p>"Finally a web agency that doesn't overcharge. Highly recommended!"</p>
+                <div class="testimonial-author"><div class="author-avatar">A</div><div><strong>Amanda Lee</strong><br><small>Lee Consulting</small></div></div>
             </div>
         </div>
     </section>
 
-    <!-- Stats Section -->
-    <section class="py-16 bg-blue-600 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-bold mb-2">50+</div>
-                    <div class="text-lg">Happy Clients</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">75+</div>
-                    <div class="text-lg">Projects Completed</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">5+</div>
-                    <div class="text-lg">Countries Served</div>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">100%</div>
-                    <div class="text-lg">Satisfaction Rate</div>
-                </div>
+    <section class="pricing" id="pricing">
+        <h2 class="section-title">Pricing</h2>
+        <div class="pricing-grid">
+            <div class="price-card">
+                <h3>Basic</h3>
+                <p class="price-subtitle">Small businesses</p>
+                <div class="price">₹2999</div>
+                <ul class="features-list"><li>5 Page Website</li><li>Mobile Responsive</li><li>Basic SEO</li><li>Contact Form</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
+            </div>
+            <div class="price-card featured">
+                <div class="featured-badge">Popular</div>
+                <h3>Business</h3>
+                <p class="price-subtitle">Growing businesses</p>
+                <div class="price">₹5999</div>
+                <ul class="features-list"><li>10 Page Website</li><li>Advanced SEO</li><li>CMS Integration</li><li>Basic E-commerce</li></ul>
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+            <div class="price-card">
+                <h3>Premium</h3>
+                <p class="price-subtitle">Established Biz</p>
+                <div class="price">₹9999</div>
+                <ul class="features-list"><li>15+ Page Website</li><li>Full SEO Package</li><li>Custom CMS</li><li>Advanced Store</li></ul>
+                <a href="#contact" class="btn btn-secondary">Get Started</a>
             </div>
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="text-center mb-16">
-            <h2 class="text-3xl font-bold gradient-text">Transparent Pricing</h2>
-            <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-            <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                Affordable packages tailored to different business needs and budgets
-            </p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Basic Plan -->
-            <div class="pricing-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold mb-2">Basic</h3>
-                    <p class="text-gray-600 mb-6">Perfect for small businesses and startups</p>
-                    <div class="text-4xl font-bold mb-6">$299<span class="text-lg text-gray-500">/project</span></div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>5 Page Website</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Mobile Responsive</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Basic SEO Setup</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Contact Form</span>
-                        </li>
-                        <li class="flex items-center text-gray-400">
-                            <i class="fas fa-times text-gray-400 mr-2"></i>
-                            <span>No E-commerce</span>
-                        </li>
-                    </ul>
+    <section class="contact" id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label>Your Name</label>
+                    <input type="text" placeholder="John Doe" required>
                 </div>
-                <div class="px-8 pb-8">
-                    <a href="#contact" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg transition text-center">
-                        Get Started
-                    </a>
+                <div class="form-group">
+                    <label>Email Address</label>
+                    <input type="email" placeholder="john@example.com" required>
                 </div>
-            </div>
-
-            <!-- Popular Plan -->
-            <div class="pricing-card bg-white rounded-xl shadow-xl overflow-hidden transition duration-300 transform scale-105 relative">
-                <div class="absolute top-0 right-0 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-bl-lg">
-                    MOST POPULAR
+                <div class="form-group">
+                    <label>Project Budget</label>
+                    <select><option>Select budget</option><option>Under $500</option><option>$500 - $1000</option><option>$1000+</option></select>
                 </div>
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold mb-2">Business</h3>
-                    <p class="text-gray-600 mb-6">Ideal for growing businesses</p>
-                    <div class="text-4xl font-bold mb-6">$599<span class="text-lg text-gray-500">/project</span></div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>10 Page Website</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Mobile Responsive</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Advanced SEO</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>CMS Integration</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Basic E-commerce</span>
-                        </li>
-                    </ul>
+                <div class="form-group">
+                    <label>Project Details</label>
+                    <textarea placeholder="Tell us about your project..." required></textarea>
                 </div>
-                <div class="px-8 pb-8">
-                    <a href="#contact" class="block w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition text-center">
-                        Get Started
-                    </a>
-                </div>
-            </div>
-
-            <!-- Premium Plan -->
-            <div class="pricing-card bg-white rounded-xl shadow-lg overflow-hidden transition duration-300">
-                <div class="p-8">
-                    <h3 class="text-2xl font-bold mb-2">Premium</h3>
-                    <p class="text-gray-600 mb-6">For established businesses and online stores</p>
-                    <div class="text-4xl font-bold mb-6">$999<span class="text-lg text-gray-500">/project</span></div>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>15+ Page Website</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Mobile Responsive</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Full SEO Package</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Custom CMS</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-check text-green-500 mr-2"></i>
-                            <span>Advanced E-commerce</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="px-8 pb-8">
-                    <a href="#contact" class="block w-full bg-gray-100 hover:bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg transition text-center">
-                        Get Started
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="mt-12 text-center">
-            <p class="text-gray-600 mb-4">Need something custom? We offer flexible solutions for unique requirements.</p>
-            <a href="#contact" class="inline-flex items-center text-blue-600 font-medium hover:underline">
-                Request a Custom Quote <i class="fas fa-arrow-right ml-2"></i>
-            </a>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
         </div>
     </section>
 
-    <!-- Process Section -->
-    <section id="process" class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold gradient-text">Our Development Process</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-                <p class="mt-4 text-gray-600 max-w-3xl mx-auto">
-                    A streamlined approach to ensure quality results and client satisfaction
-                </p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3>WebAtCost Web Solutions</h3>
+                <p>Affordable web solutions for businesses worldwide.</p>
             </div>
-
-            <div class="relative">
-                <!-- Timeline line -->
-                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-gradient-to-b from-blue-500 to-green-500 transform -translate-x-1/2"></div>
-
-                <!-- Process Step 1 -->
-                <div class="flex flex-col md:flex-row mb-12 items-center">
-                    <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0 md:text-right">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                                <span class="text-blue-600 font-bold">1</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Discovery & Planning</h3>
-                            <p class="text-gray-600">
-                                We start by understanding your business goals, target audience, and requirements to create a detailed project plan.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block w-8 h-8 rounded-full bg-blue-500 mx-auto flex-shrink-0"></div>
-                    <div class="md:w-1/2 md:pl-8"></div>
-                </div>
-
-                <!-- Process Step 2 -->
-                <div class="flex flex-col md:flex-row mb-12 items-center">
-                    <div class="md:w-1/2 md:pr-8"></div>
-                    <div class="hidden md:block w-8 h-8 rounded-full bg-green-500 mx-auto flex-shrink-0"></div>
-                    <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                                <span class="text-green-600 font-bold">2</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Design & Prototyping</h3>
-                            <p class="text-gray-600">
-                                Our designers create wireframes and mockups for your approval before any development begins.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Process Step 3 -->
-                <div class="flex flex-col md:flex-row mb-12 items-center">
-                    <div class="md:w-1/2 md:pr-8 mb-6 md:mb-0 md:text-right">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
-                                <span class="text-purple-600 font-bold">3</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Development</h3>
-                            <p class="text-gray-600">
-                                Our developers build your website using modern technologies while keeping you updated on progress.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="hidden md:block w-8 h-8 rounded-full bg-purple-500 mx-auto flex-shrink-0"></div>
-                    <div class="md:w-1/2 md:pl-8"></div>
-                </div>
-
-                <!-- Process Step 4 -->
-                <div class="flex flex-col md:flex-row items-center">
-                    <div class="md:w-1/2 md:pr-8"></div>
-                    <div class="hidden md:block w-8 h-8 rounded-full bg-red-500 mx-auto flex-shrink-0"></div>
-                    <div class="md:w-1/2 md:pl-8 mb-6 md:mb-0">
-                        <div class="bg-white p-6 rounded-xl shadow-md">
-                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
-                                <span class="text-red-600 font-bold">4</span>
-                            </div>
-                            <h3 class="text-xl font-bold mb-2">Testing & Launch</h3>
-                            <p class="text-gray-600">
-                                We rigorously test your website across devices before the official launch and provide training.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="footer-links">
+                <h4>Services</h4>
+                <ul><li><a href="#services">Development</a></li><li><a href="#services">E-commerce</a></li><li><a href="#services">SEO</a></li></ul>
+            </div>
+            <div class="footer-links">
+                <h4>Company</h4>
+                <ul><li><a href="#about">About</a></li><li><a href="#portfolio">Portfolio</a></li><li><a href="#contact">Contact</a></li></ul>
+            </div>
+            <div class="footer-links">
+                <h4>Connect</h4>
+                <ul><li><a href="mailto:contact@webatcost.in">contact@webatcost.in</a></li></ul>
             </div>
         </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section class="py-16 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold gradient-text">What Our Clients Say</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <!-- Testimonial 1 -->
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold">Sarah Johnson</h4>
-                            <p class="text-sm text-gray-600">Owner, Boutique Store</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="italic text-gray-700">
-                        "WebAtCost built my e-commerce site at a fraction of what other agencies quoted. The site looks professional and has helped increase my online sales by 40% in just three months. Sudarshan was responsive to all my requests and delivered ahead of schedule."
-                    </p>
-                </div>
-
-                <!-- Testimonial 2 -->
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold">Michael Rodriguez</h4>
-                            <p class="text-sm text-gray-600">CEO, Tech Startup</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="italic text-gray-700">
-                        "As a startup, we needed a professional website on a tight budget. WebAtCost delivered exactly what we needed - a clean, modern site that showcases our product perfectly. The SEO work they did has already brought us several qualified leads."
-                    </p>
-                </div>
-
-                <!-- Testimonial 3 -->
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold">Emily Chen</h4>
-                            <p class="text-sm text-gray-600">Marketing Director</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="italic text-gray-700">
-                        "We've worked with many web developers over the years, but WebAtCost stands out for their combination of quality and affordability. They redesigned our corporate website and the results have been phenomenal - better user experience and increased engagement."
-                    </p>
-                </div>
-
-                <!-- Testimonial 4 -->
-                <div class="bg-gray-50 p-8 rounded-xl">
-                    <div class="flex items-center mb-6">
-                        <img src="https://randomuser.me/api/portraits/men/75.jpg" alt="Client" class="w-12 h-12 rounded-full mr-4">
-                        <div>
-                            <h4 class="font-bold">David Wilson</h4>
-                            <p class="text-sm text-gray-600">Restaurant Owner</p>
-                        </div>
-                    </div>
-                    <div class="flex mb-4">
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                        <i class="fas fa-star text-yellow-400"></i>
-                    </div>
-                    <p class="italic text-gray-700">
-                        "The online reservation system WebAtCost built for my restaurant has been a game-changer. It's easy to use, looks great, and has significantly reduced no-shows. Their customer service is outstanding - they even trained my staff on how to use the backend."
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Online Presence?</h2>
-            <p class="text-xl mb-8 max-w-3xl mx-auto">
-                Get a professional website that works for your business without the premium price tag.
-            </p>
-            <a href="#contact" class="inline-flex items-center bg-white text-blue-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition shadow-lg">
-                Get Your Free Quote
-                <i class="fas fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div class="flex flex-col md:flex-row gap-12">
-            <div class="md:w-1/2">
-                <h2 class="text-3xl font-bold gradient-text mb-6">Get In Touch</h2>
-                <p class="text-gray-600 mb-8">
-                    Have a project in mind or questions about our services? Fill out the form and we'll get back to you within 24 hours.
-                </p>
-                
-                <div class="space-y-6">
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full mr-4">
-                            <i class="fas fa-envelope text-blue-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Email Us</h4>
-                            <a href="mailto:contact@webatcost.com" class="text-blue-600 hover:underline">contact@webatcost.com</a>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full mr-4">
-                            <i class="fas fa-phone-alt text-blue-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Call Us</h4>
-                            <a href="tel:+11234567890" class="text-blue-600 hover:underline">+1 (123) 456-7890</a>
-                        </div>
-                    </div>
-                    
-                    <div class="flex items-start">
-                        <div class="bg-blue-100 p-3 rounded-full mr-4">
-                            <i class="fas fa-map-marker-alt text-blue-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-medium">Our Location</h4>
-                            <p>Pune, Maharashtra, India</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-8">
-                    <h4 class="font-medium mb-4">Follow Us</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="bg-gray-200 hover:bg-blue-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="bg-gray-200 hover:bg-blue-400 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="bg-gray-200 hover:bg-pink-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="bg-gray-200 hover:bg-gray-800 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="md:w-1/2">
-                <form class="bg-white p-8 rounded-xl shadow-md">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-                        <div>
-                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Your Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                        </div>
-                        <div>
-                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                        </div>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject</label>
-                        <input type="text" id="subject" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="budget" class="block text-sm font-medium text-gray-700 mb-1">Project Budget</label>
-                        <select id="budget" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition">
-                            <option value="">Select budget range</option>
-                            <option value="under-500">Under $500</option>
-                            <option value="500-1000">$500 - $1000</option>
-                            <option value="1000-2000">$1000 - $2000</option>
-                            <option value="2000+">$2000+</option>
-                        </select>
-                    </div>
-                    
-                    <div class="mb-6">
-                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
-                        <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-6 rounded-lg transition shadow-md">
-                        Send Message
-                    </button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="py-16 bg-gray-50">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16">
-                <h2 class="text-3xl font-bold gradient-text">Frequently Asked Questions</h2>
-                <div class="w-20 h-1 bg-gradient-to-r from-blue-500 via-green-500 to-red-500 mx-auto mt-2 rounded-full"></div>
-            </div>
-            
-            <div class="max-w-3xl mx-auto">
-                <div class="space-y-4">
-                    <!-- FAQ 1 -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(1)">
-                            <h3 class="text-lg font-medium">How long does it take to build a website?</h3>
-                            <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-1"></i>
-                        </button>
-                        <div class="mt-4 text-gray-600 hidden" id="faq-content-1">
-                            <p>The timeline depends on the complexity of your project. A basic 5-page website typically takes 2-3 weeks from start to finish. More complex projects like e-commerce sites may take 4-6 weeks. We'll provide a detailed timeline after discussing your specific requirements.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 2 -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(2)">
-                            <h3 class="text-lg font-medium">Do you offer website maintenance after launch?</h3>
-                            <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-2"></i>
-                        </button>
-                        <div class="mt-4 text-gray-600 hidden" id="faq-content-2">
-                            <p>Yes, we offer various maintenance packages to suit your needs. These can include regular updates, security monitoring, backups, and content updates. Maintenance packages start at $50/month depending on the level of service required.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 3 -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(3)">
-                            <h3 class="text-lg font-medium">Can I update the website content myself?</h3>
-                            <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-3"></i>
-                        </button>
-                        <div class="mt-4 text-gray-600 hidden" id="faq-content-3">
-                            <p>Absolutely! For most of our websites, we integrate a Content Management System (like WordPress) that allows you to easily update text, images, and blog posts without any technical knowledge. We provide training to ensure you're comfortable managing your content.</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 4 -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(4)">
-                            <h3 class="text-lg font-medium">What payment methods do you accept?</h3>
-                            <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-4"></i>
-                        </button>
-                        <div class="mt-4 text-gray-600 hidden" id="faq-content-4">
-                            <p>We accept payments via bank transfer, PayPal, and major credit cards. For larger projects, we typically break payments into milestones (e.g., 30% deposit, 40% at design approval, and 30% upon completion).</p>
-                        </div>
-                    </div>
-                    
-                    <!-- FAQ 5 -->
-                    <div class="bg-white p-6 rounded-xl shadow-sm">
-                        <button class="flex justify-between items-center w-full text-left" onclick="toggleFAQ(5)">
-                            <h3 class="text-lg font-medium">Do you provide hosting services?</h3>
-                            <i class="fas fa-chevron-down text-blue-600 transition-transform" id="faq-icon-5"></i>
-                        </button>
-                        <div class="mt-4 text-gray-600 hidden" id="faq-content-5">
-                            <p>While we don't provide hosting directly, we can recommend reliable hosting providers based on your needs and budget. We also offer assistance with setting up your hosting account and migrating your website if needed.</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="mt-12 text-center">
-                    <p class="text-gray-600 mb-4">Have more questions? We're happy to help!</p>
-                    <a href="#contact" class="inline-flex items-center text-blue-600 font-medium hover:underline">
-                        Contact Us <i class="fas fa-arrow-right ml-2"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 bg-gray-900 text-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-lg font-bold mb-4 gradient-text">WebAtCost Web Solutions</h3>
-                    <p class="text-gray-400">
-                        Affordable web solutions for businesses and individuals worldwide. Quality websites without the premium price tag.
-                    </p>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Services</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Web Development</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">E-commerce</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">WordPress</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">SEO</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Maintenance</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Company</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">About Us</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Testimonials</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div>
-                    <h3 class="text-lg font-bold mb-4">Connect</h3>
-                    <div class="flex space-x-4 mb-4">
-                        <a href="#" class="bg-gray-800 hover:bg-blue-600 w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="bg-gray-800 hover:bg-blue-400 w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="bg-gray-800 hover:bg-pink-600 w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="bg-gray-800 hover:bg-gray-700 w-10 h-10 rounded-full flex items-center justify-center transition">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <p class="text-gray-400">
-                        contact@webatcost.com<br>
-                        +1 (123) 456-7890
-                    </p>
-                </div>
-            </div>
-            
-            <div class="border-t border-gray-800 pt-8 text-center text-gray-500 text-sm">
-                <p>© 2025 WebAtCost. All rights reserved. Founded by Sudarshan Dalavi.</p>
-            </div>
-        </div>
+        <div class="footer-bottom">© 2026 WebAtCost Web Solutions- <a href="https://sudarshan.webatcost.in/">Sudarshan Dalavi</a> All rights reserved.</div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const menuBtn = document.getElementById('menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        
-        menuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-        
-        // Smooth scrolling for anchor links
+        // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-                
-                // Close mobile menu if open
-                mobileMenu.classList.add('hidden');
-            });
-        });
-        
-        // FAQ toggle function
-        function toggleFAQ(number) {
-            const content = document.getElementById(`faq-content-${number}`);
-            const icon = document.getElementById(`faq-icon-${number}`);
-            
-            content.classList.toggle('hidden');
-            icon.classList.toggle('rotate-180');
-        }
-        
-        // Animation for service cards on scroll
-        const serviceCards = document.querySelectorAll('.service-card');
-        const pricingCards = document.querySelectorAll('.pricing-card');
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
-        }, { threshold: 0.1 });
-        
-        serviceCards.forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(card);
         });
-        
-        pricingCards.forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
-            observer.observe(card);
+
+        // Scroll Observer for Animations
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => { entry.target.classList.add('pop-up'); }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.stat-block, .service-card, .why-card, .testimonial-card, .price-card, .contact-form').forEach(el => {
+            observer.observe(el);
+        });
+
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Message Sent! We will contact you shortly.');
         });
     </script>
 </body>
